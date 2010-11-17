@@ -1,0 +1,58 @@
+
+mlp_net: Создан 1 слой
+mlp_net: Создан 2 слой
+mlp_net: Создан 3 слой
+		Epochs: 10
+			Training:	re(ce) = 0.227116   (0.390152  ) | numErrors = 206   | correct = 60.98
+			Test:		re(ce) = 0.284222   (0.5       ) | numErrors = 231   | correct = 50.00
+		Epochs: 20
+			Training:	re(ce) = 0.192737   (0.274621  ) | numErrors = 145   | correct = 72.54
+			Test:		re(ce) = 0.285044   (0.506494  ) | numErrors = 234   | correct = 49.35
+		Epochs: 30
+			Training:	re(ce) = 0.124869   (0.130682  ) | numErrors = 69    | correct = 86.93
+			Test:		re(ce) = 0.279171   (0.443723  ) | numErrors = 205   | correct = 55.63
+		Epochs: 40
+			Training:	re(ce) = 0.123904   (0.151515  ) | numErrors = 80    | correct = 84.85
+			Test:		re(ce) = 0.314917   (0.491342  ) | numErrors = 227   | correct = 50.87
+		Epochs: 50
+			Training:	re(ce) = 0.102151   (0.123106  ) | numErrors = 65    | correct = 87.69
+			Test:		re(ce) = 0.304403   (0.467532  ) | numErrors = 216   | correct = 53.25
+		Epochs: 60
+			Training:	re(ce) = 0.0824681  (0.0776515 ) | numErrors = 41    | correct = 92.23
+			Test:		re(ce) = 0.308141   (0.458874  ) | numErrors = 212   | correct = 54.11
+		Epochs: 70
+			Training:	re(ce) = 0.103563   (0.102273  ) | numErrors = 54    | correct = 89.77
+			Test:		re(ce) = 0.336441   (0.506494  ) | numErrors = 234   | correct = 49.35
+		Epochs: 80
+			Training:	re(ce) = 0.0606044  (0.0625    ) | numErrors = 33    | correct = 93.75
+			Test:		re(ce) = 0.281537   (0.406926  ) | numErrors = 188   | correct = 59.31
+		Epochs: 90
+			Training:	re(ce) = 0.0755817  (0.0738636 ) | numErrors = 39    | correct = 92.61
+			Test:		re(ce) = 0.30873    (0.461039  ) | numErrors = 213   | correct = 53.90
+		Epochs: 100
+			Training:	re(ce) = 0.0641358  (0.0587121 ) | numErrors = 31    | correct = 94.13
+			Test:		re(ce) = 0.296315   (0.417749  ) | numErrors = 193   | correct = 58.23
+		Достигнуто максимальное количество эпох
+	Training completed: 25.6676 s
+	Training:	re(ce) = 0.0551779  (0.0492424 ) | numErrors = 26    | correct = 95.08
+	Test:		re(ce) = 0.29976    (0.417749  ) | numErrors = 193   | correct = 58.23
+	Тестирование МСП на обучающем множестве
+	regressError = 0.0551779
+	classError = 0.0492424
+	numErrors = 26
+	correct = 95.08
+	Тестирование МСП на тестовом множестве
+	regressError = 0.29976
+	classError = 0.417749
+	numErrors = 193
+	correct = 58.23
+	Результаты тестирования MATLAB МСП на обучающем множестве
+		regressError = 0.125526
+		classError = 0.151515
+		numErrors = 80
+		correct = 84.85
+	Результаты тестирования MATLAB МСП на тестовом множестве
+		regressError = 0.342147
+		classError = 0.551948
+		numErrors = 255
+		correct = 44.81

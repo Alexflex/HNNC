@@ -1,12 +1,24 @@
 function [net, errors] = mlpTrain(net, dataSets)
-% mlpTrain - обучение МСП
+% Обучение МСП
+%
 % [net, errors] = mlpTrain(net, dataSets)
-% Вход функции: 
-%   net      - МСП
-%   dataSet  - структура, описывающая обучающее/тестовое/контрольное мн-во
-% Выход функции:
-%   net      - обученный МСП
-%   errors   - структура, описывающая процесс обучения МСП
+%
+% Arguments
+% net      - МСП
+% dataSet  - структура, описывающая обучающее/тестовое/контрольное мн-во
+%
+% net      - обученный МСП
+% errors   - структура, описывающая процесс обучения МСП
+%
+% Example
+% [net, errors] = mlpTrain(net, dataSets);
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % Инициализация обучения
 k = 1;                                  % счетчик эпох обучения
@@ -60,7 +72,7 @@ while ~alldone
     for p = 1:dataSets.training.count
         
         % Получить пример из обучающего множества
-        [input, output, class] = mlpDsGetExample(dataSets.training, p);
+        [input, output, class] = mlpDsGetExample(dataSets.training, p, false);
         
         % Прямой проход и ошибка обучения для последнего слоя
         net = mlpEval(net, input, output, class);
@@ -99,19 +111,19 @@ while ~alldone
     
     % вывод лога обучения сети и сохранение самой сети
     if(mod(k, net.printLog) == 0)          
-        printMessage('\n\t\tEpochs: %g', k);       
-        printMessage('\n\t\t\tTraining:\tre(ce) = %-10g (%-10g) | numErrors = %-5g | correct = %-5.2f', ...
+        printMessage('\n\tEpochs: %g', k);       
+        printMessage('\n\t\tTraining:\tre(ce) = %-10g (%-10g) | numErrors = %-5g | correct = %-5.2f', ...
                     errors.training.RE(k), errors.training.CE(k), ...
                     errors.training.NE(k), errors.training.CR(k));
                
         if(dataSets.hasTest)
-            printMessage('\n\t\t\tTest:\t\tre(ce) = %-10g (%-10g) | numErrors = %-5g | correct = %-5.2f', ...
+            printMessage('\n\t\tTest:\t\tre(ce) = %-10g (%-10g) | numErrors = %-5g | correct = %-5.2f', ...
                         errors.test.RE(k), errors.test.CE(k), ...
                         errors.test.NE(k), errors.test.CR(k));
         end
 
         if(dataSets.hasValidation)
-            printMessage('\n\t\t\tValidation:\tre(ce) = %-10g (%-10g) | numErrors = %-5g | correct = %-5.2f', ...
+            printMessage('\n\t\tValidation:\tre(ce) = %-10g (%-10g) | numErrors = %-5g | correct = %-5.2f', ...
                         errors.validation.RE(k), errors.validation.CE(k), ...
                         errors.validation.NE(k), errors.validation.CR(k));
         end  
@@ -136,35 +148,35 @@ while ~alldone
         elseif  ((pol(1) < 0) && ...            
                  (net.countValidationFail > 0))
             net.countValidationFail = 0;
-            printMessage('\n\t\tОбнулен счетчик провалов на проверочном множестве');
+            printMessage('\n\tОбнулен счетчик провалов на проверочном множестве');
         end
     end
 
     % проверка критериев останова процесса обучения
     if(k > net.numEpoch)
         alldone = true;
-        printMessage('\n\t\tДостигнуто максимальное количество эпох');
+        printMessage('\n\tДостигнуто максимальное количество эпох');
     end
     
     if(dnorm < net.minGradValue)
         alldone = true;
-        printMessage('\n\t\tДостигнуто минимальное значение градиента');
+        printMessage('\n\tДостигнуто минимальное значение градиента');
     end
     
     if(net.countValidationFail > net.maxValidationFail)
         alldone = true;
-        printMessage('\n\t\tРанний останов на проверочном множестве');
+        printMessage('\n\tРанний останов на проверочном множестве');
     end
     
     if(dataSets.hasValidation && ...
        errors.validation.RE(k) < net.validationStopThreshold)
         alldone = true;
-        printMessage('\n\t\tДостигнуто минимальное значение на проверочном множестве');
+        printMessage('\n\tДостигнуто минимальное значение на проверочном множестве');
     end
     
     if(errors.training.RE(k) < net.goal)
         alldone = true;
-        printMessage('\n\t\tДостигнуто минимальное значение целевой фукнции на обучающем множестве');
+        printMessage('\n\tДостигнуто минимальное значение целевой фукнции на обучающем множестве');
     end
     
     % наращиваем счетчик эпох

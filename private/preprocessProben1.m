@@ -186,7 +186,7 @@ if fid ~= -1
         'hasTraining', 'hasValidation', 'hasTest');
 
 else
-	erorr('\nreadDtFiles: Не удалось открыть файл %s', filename);
+	error('\nreadDtFiles: Не удалось открыть файл %s', filename);
 end
 
 end %of function

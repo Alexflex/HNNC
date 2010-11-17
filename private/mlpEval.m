@@ -1,15 +1,27 @@
 function [net, regresError, classError] = mlpEval(net, input, output, class)
-% mlpEval - прямой ход сети и оценка ошибки классификации и кв. ошибки
-% [net, regresError, classError] = mlpEval(net, dataSet)
-% Вход функции: 
-%   net      - МСП
-%   input    - входной вектор для примера 
-%   output   - выходной вектор для примера 
-%   class    - класс, к которому относится пример
-% Выход функции:
-%   net         - МСП
-%   regresError - квадратичная ошибка отклика сети
-%   classError  - ошибка классификации образца
+% Прямой ход сети, оценка ошибки классификации и кв. ошибки
+%
+% [net, regresError, classError] = mlpEval(net, input, output, class)
+%
+% Arguments
+% net      - МСП
+% input    - входной вектор для примера 
+% output   - выходной вектор для примера 
+% class    - класс, к которому относится пример
+%
+% net         - МСП
+% regresError - квадратичная ошибка отклика сети
+% classError  - ошибка классификации образца
+%
+% Example
+% [net, regresError, classError] = mlpEval(net, input, output, class);
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % оценка выхода сети
 [net, netOutput] = mlpFeedforward(net, input);

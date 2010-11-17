@@ -1,12 +1,24 @@
 function [net, output] = mlpFeedforward(net, input)
-% mlpFeedforward - прямой ход сети
+% Прямой ход сети
+%
 % [net, output] = mlpFeedforward(net, input)
-% Вход функции: 
-%   net    - МСП
-%   input  - входной вектор
-% Выход функции:
-%   net    - МСП
-%   output - выход сети
+%
+% Arguments
+% net      - МСП
+% input    - входной вектор для примера 
+%
+% net      - МСП
+% output   - выходной вектор для примера 
+%
+% Example
+% [net, output] = mlpFeedforward(net, input);
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % Проверка размерности входа
 if (length(input) ~= net.numInputUnits)

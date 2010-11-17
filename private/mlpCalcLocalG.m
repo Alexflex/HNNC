@@ -1,10 +1,23 @@
 function net = mlpCalcLocalG(net, input)
-% mlpCalcLocalG - функция рассчитывает локальные градиенты
-% net = mlpCalcLocalG(net)
-% Вход функции: 
-%   net    - МСП
-% Выход функции:
-%   net    - МСП c рассчитанными локальными градиентами для всех нейронов
+% Функция рассчитывает локальные градиенты
+%
+% net = mlpCalcLocalG(net, input)
+%
+% Arguments
+% net - МСП
+% input - входной вектор 
+%
+% net - МСП c рассчитанными локальными градиентами для всех нейронов
+%
+% Example
+% net = mlpCalcLocalG(net, input);
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % Обратный проход: расчет локальных градиентов
 % - для нейронов выходного слоя

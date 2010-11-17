@@ -1,16 +1,30 @@
 function [net, regresError, classError, numErrors, correct] = ...
     mlpEvalSet(net, dataSet)
-% mlpEvalSet - прямой ход сети и оценка ошибки классификации и кв. ошибки
-% [net, regresError, classError, numErrors, correct] = mlpEvalSet(net, dataSet)
-% Вход функции: 
-%   net      - МСП
-%   dataSet  - структура, описывающая обучающее/тестовое/контрольное мн-во
-% Выход функции:
-%   net         - МСП
-%   regresError - среднеквадратичная ошибка отклика сети
-%   classError  - средняя ошибка классификации образца
-%   numErrors   - количество ошибочно классифицированных примеров
-%   correct     - процент корректно классифицированных примеров
+% Прямой ход сети и оценка ошибки классификации и кв. ошибки
+%
+% [net, regresError, classError, numErrors, correct] = mlpEvalSet(net,
+% dataSet)
+%
+% Arguments
+% net      - МСП
+% dataSet  - структура, описывающая обучающее/тестовое/контрольное мн-во
+%
+% net         - МСП
+% regresError - среднеквадратичная ошибка отклика сети
+% classError  - средняя ошибка классификации образца
+% numErrors   - количество ошибочно классифицированных примеров
+% correct     - процент корректно классифицированных примеров 
+%
+% Example
+% [net, regresError, classError, numErrors, correct] = mlpEvalSet(net,
+% dataSet);
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % цикл по примерам данного множества
 CE = zeros(1, dataSet.count); 

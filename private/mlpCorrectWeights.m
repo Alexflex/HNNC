@@ -1,10 +1,22 @@
 function net = mlpCorrectWeights(net)
-% mlpCorrectWeights - функция корректирует матрицы весов каждого слоя
+% Функция корректирует матрицы весов каждого слоя
+%
 % net = mlpCorrectWeights(net)
-% Вход функции: 
-%   net     - МСП
-% Выход функции:
-%   net     - МСП c корректированными матрицами весов
+%
+% Arguments
+% net - МСП
+%
+% net - МСП cо скорректированными матрицами весов
+%
+% Example
+% net = mlpCorrectWeights(net);
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % Обратный проход - корректировка весов
 for k = 1:net.numLayers

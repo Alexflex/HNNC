@@ -1,10 +1,22 @@
 function printMessage(str, varargin)
 % ‘ункци€ выводит сообщение в поток, определенный глобальным параметром
 % flogid
-% ¬ходные параметры:
-%   str         - строка форматировани€
-%   varargin    - параметры
-% ¬ыходные параметры:  
+%
+% printMessage(str, varargin)
+%
+% Arguments
+% str         - строка форматировани€
+% varargin    - параметры 
+%
+% Example
+% printMessage('\n\t%d', 5);
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % глобальный поток вывода, св€занный либо с экраном, либо с файлом
 global flogid;

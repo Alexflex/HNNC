@@ -1,22 +1,23 @@
-% clc
-% clear all
+clc
+clear all
 
 global flogid;
+flogid = 1;
 
 % filenames = 'textureCR';
-filenames = 'vowels';
+% filenames = 'vowels';
 % filenames = 'soybean1';
 % filenames = 'mushroom1';
-% filenames = 'soybean1';
+filenames = 'soybean1';
 
 % загрузка обучающего окружения из файла
 ds = loadDataSets(filenames);
 
-timeStart = cputime;
-fprintf('\nНачало обработки базы тестовых задач...');
+tic = cputime;
+printMessage('\nНачало обработки тестовой задачи %s', filenames);
 
 path = strcat('./learnedTasks/', filenames, '_text__log.dat');
-flogid = fopen(char(path), 'w');
+% flogid = fopen(char(path), 'w');
 if(flogid == -1)
     error('Test: Не могу открыть файл %s', flogid);
 end
@@ -36,7 +37,7 @@ mlpSave(net, char(path));
 
 % сохранение графика обучения в файл
 path = strcat('./learnedTasks/', filenames, '_log');
-mlpPlot(char(path), errors);
+mlpPlot(char(path), errors, true);
 
 % сохранение лога обучения в файл
 path = strcat('./learnedTasks/', filenames, '_errors');
@@ -57,6 +58,10 @@ end
 % создание обучающего множества для netff
 p = ds.training.inputs;
 t = ds.training.outputs;
+if(ds.hasTest)
+    p = [p; ds.test.inputs];
+    t = [t; ds.test.outputs];
+end
 if(ds.hasValidation)
     p = [p; ds.validation.inputs];
     t = [t; ds.validation.outputs];
@@ -64,6 +69,7 @@ end
 
 % создание массива ячеек
 netm = newff(p', t', [ds.numInputs, 8, 10], {}, 'trainrp');
+netm.trainParam.showWindow = 0;
 [netm, tr] = train(netm, p', t');
 plotperform(tr);
 h = gcf;
@@ -79,10 +85,10 @@ classError = classErrorSet/ds.training.count;
 correct = 100*(1 - classError);
 numErrors = classError*ds.training.count;
 printMessage('\n\tРезультаты тестирования MATLAB МСП на обучающем множестве');
-printMessage(sprintf('\n\t\tregressError = %g', MSEtst));
-printMessage(sprintf('\n\t\tclassError = %g', classError));
-printMessage(sprintf('\n\t\tnumErrors = %d', numErrors));
-printMessage(sprintf('\n\t\tcorrect = %5.2f%', correct));
+printMessage('\n\t\tregressError = %g', MSEtst);
+printMessage('\n\t\tclassError = %g', classError);
+printMessage('\n\t\tnumErrors = %d', numErrors);
+printMessage('\n\t\tcorrect = %5.2f%', correct);
 
 % Obtaining the test MSE
 if(ds.hasTest)
@@ -97,16 +103,14 @@ if(ds.hasTest)
     correct = 100*(1 - classError);
     numErrors = classError*ds.test.count;
     printMessage('\n\tРезультаты тестирования MATLAB МСП на тестовом множестве');
-    printMessage(sprintf('\n\t\tregressError = %g', MSEtst));
-    printMessage(sprintf('\n\t\tclassError = %g', classError));
-    printMessage(sprintf('\n\t\tnumErrors = %d', numErrors));
-    printMessage(sprintf('\n\t\tcorrect = %5.2f%', correct));
+    printMessage('\n\t\tregressError = %g', MSEtst);
+    printMessage('\n\t\tclassError = %g', classError);
+    printMessage('\n\t\tnumErrors = %d', numErrors);
+    printMessage('\n\t\tcorrect = %5.2f%', correct);
 end
 
 % сохранение лога обучения в файл
 path = strcat('./learnedTasks/', filenames, '_errors_matlab_mlp');
 saveas(h, char(path), 'png');
 
-fprintf('\nОбработка базы завершена. %d задач за %8.3f с\n', ...
-            length(filenames), ...
-            (cputime - timeStart)/60);
+printMessage('\nОбработка базы завершена за %8.3f с\n', toc);

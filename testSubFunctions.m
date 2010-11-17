@@ -42,4 +42,17 @@ disp(dpurelinf(matTestArg));
 fprintf('\n');
 disp(dpurelinf(matTestArg'));
 
+fprintf('\nПриведение произвольного массива к нулевому среднему и ед СКО\n');
+matTestArg = [  1 2 3 4 5 6 7 8 9 10; ...
+                1 2 3 4 5 6 7 8 9 10; ...
+                1 2 3 4 5 6 7 8 9 10];
+            
+matTestArg = matTestArg(randperm(size(matTestArg, 1)), :);
+disp(matTestArg);
+
+classes = unique(matTestArg(:, (9 + 1):end));   
+disp(classes);
+
+disp(mapstd(matTestArg));
+
 end %of function

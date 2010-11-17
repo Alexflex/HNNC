@@ -1,27 +1,35 @@
 function [classes, values] = classesFromOutputs(outputs)
 % Формирует массив классов принадлежности из набора выходных образцов
+%
 % classes = classesFromOutputs(outputs)
-% Входные параметры: 
-%   outputs - выходной вектор сети
-% Выходные параметры:
-%   classes - класс, к которому сеть отнесла данный элемент
-%   values  - отклик нейрона-победителя
 %
-% Например, данная матрица outputs будет перекодирована в вектор classes
-% outputs:
-%  1 -1 -1
-% -1  1 -1
-% -1 -1  1
-%  1 -1 -1
-% -1 -1  1
+% Arguments
+% outputs - выходной вектор сети
+%
+% classes - класс, к которому сеть отнесла данный элемент
+% values  - отклик нейрона-победителя
+%
+% Example
+% outputs = [    1 -1 -1;
+%               -1  1 -1;
+%               -1 -1  1;
+%                1 -1 -1;
+%               -1 -1  1];
+% classes = classesFromOutputs(outputs);
+% classes
+% classes = [   1;
+%               2; 
+%               3;
+%               1;
+%               3]
+%
+% See also
 % 
-% в classes:
-%
-% 1
-% 2 
-% 3 
-% 1
-% 3
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % возвращает наибольшие элементы по столбцам массива
 [values, classes] = max(outputs, [], 2);

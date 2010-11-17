@@ -1,12 +1,23 @@
 function mlpPlot(path, learnInfo, showAfterSave)
-% mlpPlot - построение графика процесса обучения и тестирования МСП
-% mlpPlot(path, learnInfo, closeAfterSave)
-% где
-% Вход функции:
-%   path - имя файла, в который будет сохранен график
-%   learnInfo - исходные данные о процессе обучения
-%   showAfterSave - показывать график после сохранения
-
+% Построение графика процесса обучения и тестирования МСП
+%
+% mlpPlot(path, learnInfo, showAfterSave)
+%
+% Arguments
+% path - имя файла, в который будет сохранен график
+% learnInfo - исходные данные о процессе обучения
+% showAfterSave - показывать график после сохранения
+%
+% Example
+% mlpPlot(char(path), learnInfo, true);
+%
+% See also
+% 
+%
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
 % Create figure
 fig = figure(   'PaperPosition', [0.6345 6.345 20.3 15.23], ...
@@ -39,8 +50,8 @@ legend(leg);
 
 saveas(fig, path, 'png');
 
-% если нет флага, не закрывающего рисунок после сохранения в файл
-if(nargin < 3)
+% если флаг показа рисунка сброшен, то закрыть рисунок
+if(~showAfterSave)
     close(fig);
 end
 

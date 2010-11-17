@@ -1,27 +1,34 @@
 function outputs = outputsFromClasses(classes, numOutputUnits)
 % ‘ормирует набор выходных образцов из массива классов принадлежности
-% outputs = outputsFromClasses(classes)
-% ¬ходные параметры: 
-%   outputs - класс, к которому сеть отнесла данный элемент
-% ¬ыходные параметры:
-%   classes - выходной вектор сети
 %
-% Ќапример, данный вектор classes будет перекодирован в матрицу outputs
-% classes:
+% outputs = outputsFromClasses(classes, numOutputUnits)
 %
-% 1
-% 2 
-% 3 
-% 1
-% 3
+% Arguments
+% classes - выходной вектор сети
+% numOutputUnits - размерность вектора выходов
 %
-% в outputs:
+% outputs - класс, к которому сеть отнесла данный элемент
 %
-%  1 -1 -1
-% -1  1 -1
-% -1 -1  1
-%  1 -1 -1
-% -1 -1  1
+% Example
+% classes = [   1;
+%               2; 
+%               3;
+%               1;
+%               3];
+% outputs = outputsFromClasses(classes, 3);
+% outputs = [    1 -1 -1;
+%               -1  1 -1;
+%               -1 -1  1;
+%                1 -1 -1;
+%               -1 -1  1];
+%
+% See also
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
+
 
 sampleCount = length(classes);
 

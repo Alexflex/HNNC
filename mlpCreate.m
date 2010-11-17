@@ -1,17 +1,28 @@
 function net = mlpCreate(numUnitsLayers, activateFuncs)
-% mlpCreate - создает многослойный персептрон.
+% Создает и инициализирует структуру, описывающую многослойный персептрон
+%
 % net = mlpCreate(numUnitsLayers, activateFuncs)
-% где
-% Выход функции:
-%   net - структура, описывающая МСП заданной архитектуры
-% Вход функции:
-%   numUnitsLayers  - массив, описывающий количество нейронов по слоям
-%   activateFuncs   - массив, описывающий функции активации нейронов
-%                       скрытых и выходного слоев. Размерность на единицу
-%                       меньше, чем numUnitsLayers. Состоит из строк вида
-%                       'tansig', 'purelin'
+%
+% Arguments
+% numUnitsLayers - массив, описывающий количество нейронов по слоям
+% activateFuncs - массив, описывающий функции активации нейронов скрытых и 
+%   выходного слоев. Размерность на единицу меньше, чем numUnitsLayers. 
+%   Состоит из строк вида 'tansig', 'purelin'
+%
+% net - структура, описывающая МСП заданной архитектуры
+%
+% Example
+% net = mlpCreate([10, 8, 10, 10], {'tansig'; 'tansig'; 'tansig'});
+%
+% See also
+% nntool
+% 
+% Revisions
+% Author: Vulfin Alex, Date: 17/11/2010
+% Supervisor: Vulfin Alex, Date: 17/11/2010
+% Author: (Next revision author), Date: (Next revision date)
 
-% разбор аргументов функции
+% Разбор аргументов функции
 if any([length(numUnitsLayers) < 3, ...     % хотя бы один скрытый слой
         isinteger(numUnitsLayers),  ...     
         find(numUnitsLayers <= 0),  ...
@@ -19,7 +30,7 @@ if any([length(numUnitsLayers) < 3, ...     % хотя бы один скрытый слой
     error('mlp_net: Неверные входные данные для создания сети');
 end
 
-% Инициализация параметров сети
+% Инициализация параметров сети по умолчанию
 net.numLayers = length(numUnitsLayers) - 1;	% количество слоев 
 net.numInputUnits = numUnitsLayers(1);      % размерность входа
 net.numOutputUnits = numUnitsLayers(end);	% размерность выхода
@@ -27,16 +38,23 @@ net.initValue = 0.25;                       % интервал инициализации
 net.numEpoch = 1000;                        % максимальное количество эпох
 net.momentum = 0.5;                         % момент обучения
 net.speedLearn = 0.01;                      % скорость обучения
-net.minGradValue = 1e-10;                   % минимальное значение градиент
-net.printLog = 10;                          % вывод лога процесса обучения
-net.countShuffleSet = 5;                    % перемешивать обучающее множество каждые countShuffleSet эпох
-net.goal = 1e-5;                            % значение целевой функции на обучающем множестве
+% минимальное значение градиента
+net.minGradValue = 1e-10;                   
+% вывод лога процесса обучения
+net.printLog = 10;                          
+% перемешивать обучающее множество каждые countShuffleSet эпох
+net.countShuffleSet = 5;                    
+% значение целевой функции на обучающем множестве
+net.goal = 1e-5;                            
 
 % Критерии остановки обучения
 net.numEstimatedEpoch = 10;                 % количество оцениваемых эпох
-net.maxValidationFail = 10;                 % максимальное количество провалов на множестве оценивания
-net.countValidationFail = 0;                % количество провалов на множестве оценивания   
-net.validationStopThreshold = 1e-5;         % пороговая ошибка на контрольном множестве
+% максимальное количество провалов на множестве оценивания
+net.maxValidationFail = 10;                 
+% количество провалов на множестве оценивания   
+net.countValidationFail = 0;                
+% пороговая ошибка на контрольном множестве
+net.validationStopThreshold = 1e-5;         
 
 % параметры первого скрытого слоя
 % номер скрытого слоя

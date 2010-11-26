@@ -21,5 +21,6 @@ clc;
 preprocessProben1();
 preprocessELENA_Texture();
 preprocessVowels();
+preprocessXOR();
 
 end % of function

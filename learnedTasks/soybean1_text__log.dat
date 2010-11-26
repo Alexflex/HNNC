@@ -1,0 +1,121 @@
+
+mlp_net: Создан 1 слой
+mlp_net: Создан 2 слой
+mlp_net: Создан 3 слой
+	Epochs: 10
+		Training:	re(ce) = 0.0286645  (0.324561  ) | numErrors = 111   | correct = 67.54
+		Test:		re(ce) = 0.0326813  (0.417647  ) | numErrors = 71    | correct = 58.24
+		Validation:	re(ce) = 0.0307494  (0.345029  ) | numErrors = 59    | correct = 65.50
+	Epochs: 20
+		Training:	re(ce) = 0.0233566  (0.283626  ) | numErrors = 97    | correct = 71.64
+		Test:		re(ce) = 0.027757   (0.364706  ) | numErrors = 62    | correct = 63.53
+		Validation:	re(ce) = 0.0251882  (0.298246  ) | numErrors = 51    | correct = 70.18
+	Epochs: 30
+		Training:	re(ce) = 0.02143    (0.25731   ) | numErrors = 88    | correct = 74.27
+		Test:		re(ce) = 0.0263702  (0.311765  ) | numErrors = 53    | correct = 68.82
+		Validation:	re(ce) = 0.0239517  (0.28655   ) | numErrors = 49    | correct = 71.35
+	Epochs: 40
+		Training:	re(ce) = 0.0199893  (0.21345   ) | numErrors = 73    | correct = 78.65
+		Test:		re(ce) = 0.0249495  (0.305882  ) | numErrors = 52    | correct = 69.41
+		Validation:	re(ce) = 0.0224562  (0.25731   ) | numErrors = 44    | correct = 74.27
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 50
+		Training:	re(ce) = 0.0193172  (0.25731   ) | numErrors = 88    | correct = 74.27
+		Test:		re(ce) = 0.0248259  (0.294118  ) | numErrors = 50    | correct = 70.59
+		Validation:	re(ce) = 0.0219349  (0.28655   ) | numErrors = 49    | correct = 71.35
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 60
+		Training:	re(ce) = 0.018749   (0.27193   ) | numErrors = 93    | correct = 72.81
+		Test:		re(ce) = 0.0237055  (0.305882  ) | numErrors = 52    | correct = 69.41
+		Validation:	re(ce) = 0.0209506  (0.28655   ) | numErrors = 49    | correct = 71.35
+	Epochs: 70
+		Training:	re(ce) = 0.0184628  (0.266082  ) | numErrors = 91    | correct = 73.39
+		Test:		re(ce) = 0.0230826  (0.311765  ) | numErrors = 53    | correct = 68.82
+		Validation:	re(ce) = 0.0203805  (0.292398  ) | numErrors = 50    | correct = 70.76
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 80
+		Training:	re(ce) = 0.0182994  (0.236842  ) | numErrors = 81    | correct = 76.32
+		Test:		re(ce) = 0.023825   (0.329412  ) | numErrors = 56    | correct = 67.06
+		Validation:	re(ce) = 0.0207433  (0.269006  ) | numErrors = 46    | correct = 73.10
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 90
+		Training:	re(ce) = 0.0181255  (0.269006  ) | numErrors = 92    | correct = 73.10
+		Test:		re(ce) = 0.0229532  (0.329412  ) | numErrors = 56    | correct = 67.06
+		Validation:	re(ce) = 0.0206     (0.304094  ) | numErrors = 52    | correct = 69.59
+	Epochs: 100
+		Training:	re(ce) = 0.0177486  (0.239766  ) | numErrors = 82    | correct = 76.02
+		Test:		re(ce) = 0.0230979  (0.323529  ) | numErrors = 55    | correct = 67.65
+		Validation:	re(ce) = 0.0204541  (0.292398  ) | numErrors = 50    | correct = 70.76
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 110
+		Training:	re(ce) = 0.0175561  (0.269006  ) | numErrors = 92    | correct = 73.10
+		Test:		re(ce) = 0.0225908  (0.323529  ) | numErrors = 55    | correct = 67.65
+		Validation:	re(ce) = 0.0200457  (0.315789  ) | numErrors = 54    | correct = 68.42
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 120
+		Training:	re(ce) = 0.0175478  (0.210526  ) | numErrors = 72    | correct = 78.95
+		Test:		re(ce) = 0.0231635  (0.288235  ) | numErrors = 49    | correct = 71.18
+		Validation:	re(ce) = 0.0206333  (0.298246  ) | numErrors = 51    | correct = 70.18
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 130
+		Training:	re(ce) = 0.0169674  (0.251462  ) | numErrors = 86    | correct = 74.85
+		Test:		re(ce) = 0.0221823  (0.317647  ) | numErrors = 54    | correct = 68.24
+		Validation:	re(ce) = 0.0199597  (0.304094  ) | numErrors = 52    | correct = 69.59
+	Epochs: 140
+		Training:	re(ce) = 0.0179302  (0.216374  ) | numErrors = 74    | correct = 78.36
+		Test:		re(ce) = 0.0233793  (0.317647  ) | numErrors = 54    | correct = 68.24
+		Validation:	re(ce) = 0.0203534  (0.269006  ) | numErrors = 46    | correct = 73.10
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 150
+		Training:	re(ce) = 0.0179765  (0.254386  ) | numErrors = 87    | correct = 74.56
+		Test:		re(ce) = 0.0228865  (0.294118  ) | numErrors = 50    | correct = 70.59
+		Validation:	re(ce) = 0.0207569  (0.309942  ) | numErrors = 53    | correct = 69.01
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 160
+		Training:	re(ce) = 0.0178798  (0.21345   ) | numErrors = 73    | correct = 78.65
+		Test:		re(ce) = 0.0236142  (0.305882  ) | numErrors = 52    | correct = 69.41
+		Validation:	re(ce) = 0.0217446  (0.292398  ) | numErrors = 50    | correct = 70.76
+	Обнулен счетчик провалов на проверочном множестве
+	Epochs: 170
+		Training:	re(ce) = 0.0167894  (0.160819  ) | numErrors = 55    | correct = 83.92
+		Test:		re(ce) = 0.0215707  (0.241176  ) | numErrors = 41    | correct = 75.88
+		Validation:	re(ce) = 0.0195187  (0.22807   ) | numErrors = 39    | correct = 77.19
+	Epochs: 180
+		Training:	re(ce) = 0.0174281  (0.230994  ) | numErrors = 79    | correct = 76.90
+		Test:		re(ce) = 0.0226569  (0.323529  ) | numErrors = 55    | correct = 67.65
+		Validation:	re(ce) = 0.0204582  (0.274854  ) | numErrors = 47    | correct = 72.51
+	Ранний останов на проверочном множестве
+	Training completed: 36.7302 s
+	Training:	re(ce) = 0.0167912  (0.233918  ) | numErrors = 80    | correct = 76.61
+	Validation:	re(ce) = 0.0195074  (0.274854  ) | numErrors = 47    | correct = 72.51
+	Test:		re(ce) = 0.0220747  (0.323529  ) | numErrors = 55    | correct = 67.65
+	Тестирование МСП на обучающем множестве
+		regressError = 0.0167912
+		classError = 0.233918
+		numErrors = 80
+		correct = 76.61
+	Тестирование МСП на тестовом множестве
+		regressError = 0.0220747
+		classError = 0.323529
+		numErrors = 55
+		correct = 67.65
+	Тестирование МСП на контрольном множестве
+		regressError = 0.0195074
+		classError = 0.274854
+		numErrors = 47
+		correct = 72.51
+	Результаты тестирования MATLAB МСП на обучающем множестве
+		regressError = 0.0241104
+		classError = 0.318713
+		numErrors = 109
+		correct = 68.13
+	Результаты тестирования MATLAB МСП на тестовом множестве
+		regressError = 0.033249
+		classError = 0.435294
+		numErrors = 74
+		correct = 56.47
+	Результаты тестирования MATLAB МСП на проверочном множестве
+		regressError = 0.0321764
+		classError = 0.397661
+		numErrors = 68
+		correct = 60.23

@@ -43,9 +43,11 @@ if (~isempty(learnInfo.test.RE))
 end
 hold off
 
-title('Error vs. Learning Time');
-xlabel('Эпохи');
-ylabel('СКО');
+str = sprintf('Error vs. Learning Time, MSE = %15.10f', ...
+    learnInfo.training.RE(end));
+title(str);
+xlabel('Epochs');
+ylabel('MSE');
 legend(leg);  
 
 saveas(fig, path, 'png');

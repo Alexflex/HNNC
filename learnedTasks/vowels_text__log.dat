@@ -2,21 +2,327 @@
 mlp_net: Создан 1 слой
 mlp_net: Создан 2 слой
 mlp_net: Создан 3 слой
-		Epochs: 10
-			Training:	re(ce) = 0.191664   (0.316288  ) | numErrors = 167   | correct = 68.37
-			Test:		re(ce) = 0.296592   (0.560606  ) | numErrors = 259   | correct = 43.94
-		Epochs: 20
-			Training:	re(ce) = 0.138557   (0.185606  ) | numErrors = 98    | correct = 81.44
-			Test:		re(ce) = 0.302399   (0.541126  ) | numErrors = 250   | correct = 45.89
-		Epochs: 30
-			Training:	re(ce) = 0.122248   (0.143939  ) | numErrors = 76    | correct = 85.61
-			Test:		re(ce) = 0.315503   (0.577922  ) | numErrors = 267   | correct = 42.21
-		Epochs: 40
-			Training:	re(ce) = 0.119995   (0.138258  ) | numErrors = 73    | correct = 86.17
-			Test:		re(ce) = 0.321394   (0.52381   ) | numErrors = 242   | correct = 47.62
-		Epochs: 50
-			Training:	re(ce) = 0.136552   (0.153409  ) | numErrors = 81    | correct = 84.66
-			Test:		re(ce) = 0.354508   (0.519481  ) | numErrors = 240   | correct = 48.05
-		Epochs: 60
-			Training:	re(ce) = 0.0993697  (0.100379  ) | numErrors = 53    | correct = 89.96
-			Test:		re(ce) = 0.347253   (0.510823  ) | numErrors = 236   | correct = 48.92
+	Epochs: 10
+		Training:	re(ce) = 0.201558   (0.342803  ) | numErrors = 181   | correct = 65.72
+		Test:		re(ce) = 0.274496   (0.582251  ) | numErrors = 269   | correct = 41.77
+	Epochs: 20
+		Training:	re(ce) = 0.170353   (0.25947   ) | numErrors = 137   | correct = 74.05
+		Test:		re(ce) = 0.249772   (0.430736  ) | numErrors = 199   | correct = 56.93
+	Epochs: 30
+		Training:	re(ce) = 0.123188   (0.130682  ) | numErrors = 69    | correct = 86.93
+		Test:		re(ce) = 0.293783   (0.487013  ) | numErrors = 225   | correct = 51.30
+	Epochs: 40
+		Training:	re(ce) = 0.111201   (0.0852273 ) | numErrors = 45    | correct = 91.48
+		Test:		re(ce) = 0.307051   (0.474026  ) | numErrors = 219   | correct = 52.60
+	Epochs: 50
+		Training:	re(ce) = 0.100795   (0.0662879 ) | numErrors = 35    | correct = 93.37
+		Test:		re(ce) = 0.321711   (0.493506  ) | numErrors = 228   | correct = 50.65
+	Epochs: 60
+		Training:	re(ce) = 0.0958826  (0.0662879 ) | numErrors = 35    | correct = 93.37
+		Test:		re(ce) = 0.331952   (0.482684  ) | numErrors = 223   | correct = 51.73
+	Epochs: 70
+		Training:	re(ce) = 0.0873112  (0.0568182 ) | numErrors = 30    | correct = 94.32
+		Test:		re(ce) = 0.314658   (0.474026  ) | numErrors = 219   | correct = 52.60
+	Epochs: 80
+		Training:	re(ce) = 0.0875448  (0.0549242 ) | numErrors = 29    | correct = 94.51
+		Test:		re(ce) = 0.336344   (0.5       ) | numErrors = 231   | correct = 50.00
+	Epochs: 90
+		Training:	re(ce) = 0.0744163  (0.030303  ) | numErrors = 16    | correct = 96.97
+		Test:		re(ce) = 0.347309   (0.530303  ) | numErrors = 245   | correct = 46.97
+	Epochs: 100
+		Training:	re(ce) = 0.0829878  (0.0492424 ) | numErrors = 26    | correct = 95.08
+		Test:		re(ce) = 0.336887   (0.495671  ) | numErrors = 229   | correct = 50.43
+	Epochs: 110
+		Training:	re(ce) = 0.0658845  (0.0208333 ) | numErrors = 11    | correct = 97.92
+		Test:		re(ce) = 0.341856   (0.512987  ) | numErrors = 237   | correct = 48.70
+	Epochs: 120
+		Training:	re(ce) = 0.0730347  (0.0340909 ) | numErrors = 18    | correct = 96.59
+		Test:		re(ce) = 0.351139   (0.487013  ) | numErrors = 225   | correct = 51.30
+	Epochs: 130
+		Training:	re(ce) = 0.0638174  (0.0246212 ) | numErrors = 13    | correct = 97.54
+		Test:		re(ce) = 0.351032   (0.502165  ) | numErrors = 232   | correct = 49.78
+	Epochs: 140
+		Training:	re(ce) = 0.0713732  (0.030303  ) | numErrors = 16    | correct = 96.97
+		Test:		re(ce) = 0.359384   (0.487013  ) | numErrors = 225   | correct = 51.30
+	Epochs: 150
+		Training:	re(ce) = 0.0646364  (0.0265152 ) | numErrors = 14    | correct = 97.35
+		Test:		re(ce) = 0.362701   (0.495671  ) | numErrors = 229   | correct = 50.43
+	Epochs: 160
+		Training:	re(ce) = 0.0669902  (0.0246212 ) | numErrors = 13    | correct = 97.54
+		Test:		re(ce) = 0.3634     (0.517316  ) | numErrors = 239   | correct = 48.27
+	Epochs: 170
+		Training:	re(ce) = 0.0646918  (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.390476   (0.521645  ) | numErrors = 241   | correct = 47.84
+	Epochs: 180
+		Training:	re(ce) = 0.0640274  (0.0246212 ) | numErrors = 13    | correct = 97.54
+		Test:		re(ce) = 0.382904   (0.5       ) | numErrors = 231   | correct = 50.00
+	Epochs: 190
+		Training:	re(ce) = 0.0666614  (0.030303  ) | numErrors = 16    | correct = 96.97
+		Test:		re(ce) = 0.371071   (0.510823  ) | numErrors = 236   | correct = 48.92
+	Epochs: 200
+		Training:	re(ce) = 0.058526   (0.0208333 ) | numErrors = 11    | correct = 97.92
+		Test:		re(ce) = 0.374536   (0.525974  ) | numErrors = 243   | correct = 47.40
+	Epochs: 210
+		Training:	re(ce) = 0.0733733  (0.0284091 ) | numErrors = 15    | correct = 97.16
+		Test:		re(ce) = 0.373563   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 220
+		Training:	re(ce) = 0.0637918  (0.0284091 ) | numErrors = 15    | correct = 97.16
+		Test:		re(ce) = 0.394731   (0.554113  ) | numErrors = 256   | correct = 44.59
+	Epochs: 230
+		Training:	re(ce) = 0.0615899  (0.030303  ) | numErrors = 16    | correct = 96.97
+		Test:		re(ce) = 0.399799   (0.545455  ) | numErrors = 252   | correct = 45.45
+	Epochs: 240
+		Training:	re(ce) = 0.0528853  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.393471   (0.54329   ) | numErrors = 251   | correct = 45.67
+	Epochs: 250
+		Training:	re(ce) = 0.0573847  (0.0208333 ) | numErrors = 11    | correct = 97.92
+		Test:		re(ce) = 0.3775     (0.532468  ) | numErrors = 246   | correct = 46.75
+	Epochs: 260
+		Training:	re(ce) = 0.0522329  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.381789   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 270
+		Training:	re(ce) = 0.0530974  (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.383059   (0.525974  ) | numErrors = 243   | correct = 47.40
+	Epochs: 280
+		Training:	re(ce) = 0.0538345  (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.397531   (0.536797  ) | numErrors = 248   | correct = 46.32
+	Epochs: 290
+		Training:	re(ce) = 0.0610289  (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.390932   (0.528139  ) | numErrors = 244   | correct = 47.19
+	Epochs: 300
+		Training:	re(ce) = 0.0514741  (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.401856   (0.551948  ) | numErrors = 255   | correct = 44.81
+	Epochs: 310
+		Training:	re(ce) = 0.051812   (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.393286   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 320
+		Training:	re(ce) = 0.0533112  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.410652   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 330
+		Training:	re(ce) = 0.0496635  (0.0170455 ) | numErrors = 9     | correct = 98.30
+		Test:		re(ce) = 0.398324   (0.536797  ) | numErrors = 248   | correct = 46.32
+	Epochs: 340
+		Training:	re(ce) = 0.063701   (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.399594   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 350
+		Training:	re(ce) = 0.0529286  (0.0246212 ) | numErrors = 13    | correct = 97.54
+		Test:		re(ce) = 0.397455   (0.528139  ) | numErrors = 244   | correct = 47.19
+	Epochs: 360
+		Training:	re(ce) = 0.0547966  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.393547   (0.536797  ) | numErrors = 248   | correct = 46.32
+	Epochs: 370
+		Training:	re(ce) = 0.0458161  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.40229    (0.534632  ) | numErrors = 247   | correct = 46.54
+	Epochs: 380
+		Training:	re(ce) = 0.0513032  (0.0246212 ) | numErrors = 13    | correct = 97.54
+		Test:		re(ce) = 0.391652   (0.532468  ) | numErrors = 246   | correct = 46.75
+	Epochs: 390
+		Training:	re(ce) = 0.0509509  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.3915     (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 400
+		Training:	re(ce) = 0.0810522  (0.0549242 ) | numErrors = 29    | correct = 94.51
+		Test:		re(ce) = 0.407009   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 410
+		Training:	re(ce) = 0.0466205  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.403428   (0.530303  ) | numErrors = 245   | correct = 46.97
+	Epochs: 420
+		Training:	re(ce) = 0.0463662  (0.0170455 ) | numErrors = 9     | correct = 98.30
+		Test:		re(ce) = 0.406789   (0.528139  ) | numErrors = 244   | correct = 47.19
+	Epochs: 430
+		Training:	re(ce) = 0.0461312  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.408863   (0.534632  ) | numErrors = 247   | correct = 46.54
+	Epochs: 440
+		Training:	re(ce) = 0.0522018  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.407434   (0.534632  ) | numErrors = 247   | correct = 46.54
+	Epochs: 450
+		Training:	re(ce) = 0.0590554  (0.0208333 ) | numErrors = 11    | correct = 97.92
+		Test:		re(ce) = 0.406444   (0.54329   ) | numErrors = 251   | correct = 45.67
+	Epochs: 460
+		Training:	re(ce) = 0.0561554  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.421718   (0.554113  ) | numErrors = 256   | correct = 44.59
+	Epochs: 470
+		Training:	re(ce) = 0.0613228  (0.0132576 ) | numErrors = 7     | correct = 98.67
+		Test:		re(ce) = 0.392006   (0.54329   ) | numErrors = 251   | correct = 45.67
+	Epochs: 480
+		Training:	re(ce) = 0.0488903  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.40501    (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 490
+		Training:	re(ce) = 0.0468336  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.415105   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 500
+		Training:	re(ce) = 0.0503279  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.408579   (0.525974  ) | numErrors = 243   | correct = 47.40
+	Epochs: 510
+		Training:	re(ce) = 0.0410072  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.413653   (0.532468  ) | numErrors = 246   | correct = 46.75
+	Epochs: 520
+		Training:	re(ce) = 0.0531527  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.419565   (0.530303  ) | numErrors = 245   | correct = 46.97
+	Epochs: 530
+		Training:	re(ce) = 0.0450899  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.413251   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 540
+		Training:	re(ce) = 0.042616   (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.412299   (0.54329   ) | numErrors = 251   | correct = 45.67
+	Epochs: 550
+		Training:	re(ce) = 0.0426043  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.417043   (0.528139  ) | numErrors = 244   | correct = 47.19
+	Epochs: 560
+		Training:	re(ce) = 0.0408673  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.414163   (0.545455  ) | numErrors = 252   | correct = 45.45
+	Epochs: 570
+		Training:	re(ce) = 0.050172   (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.426064   (0.549784  ) | numErrors = 254   | correct = 45.02
+	Epochs: 580
+		Training:	re(ce) = 0.0607896  (0.0454545 ) | numErrors = 24    | correct = 95.45
+		Test:		re(ce) = 0.403617   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 590
+		Training:	re(ce) = 0.0498723  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.411728   (0.545455  ) | numErrors = 252   | correct = 45.45
+	Epochs: 600
+		Training:	re(ce) = 0.0453093  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.413283   (0.554113  ) | numErrors = 256   | correct = 44.59
+	Epochs: 610
+		Training:	re(ce) = 0.0469678  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.417902   (0.532468  ) | numErrors = 246   | correct = 46.75
+	Epochs: 620
+		Training:	re(ce) = 0.0445172  (0.0170455 ) | numErrors = 9     | correct = 98.30
+		Test:		re(ce) = 0.415601   (0.532468  ) | numErrors = 246   | correct = 46.75
+	Epochs: 630
+		Training:	re(ce) = 0.0414005  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.415356   (0.536797  ) | numErrors = 248   | correct = 46.32
+	Epochs: 640
+		Training:	re(ce) = 0.0483538  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.412964   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 650
+		Training:	re(ce) = 0.0494259  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.409955   (0.52381   ) | numErrors = 242   | correct = 47.62
+	Epochs: 660
+		Training:	re(ce) = 0.0593663  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.40746    (0.54329   ) | numErrors = 251   | correct = 45.67
+	Epochs: 670
+		Training:	re(ce) = 0.0446746  (0.0170455 ) | numErrors = 9     | correct = 98.30
+		Test:		re(ce) = 0.418752   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 680
+		Training:	re(ce) = 0.0527763  (0.0208333 ) | numErrors = 11    | correct = 97.92
+		Test:		re(ce) = 0.410879   (0.534632  ) | numErrors = 247   | correct = 46.54
+	Epochs: 690
+		Training:	re(ce) = 0.0419304  (0.0132576 ) | numErrors = 7     | correct = 98.67
+		Test:		re(ce) = 0.414564   (0.536797  ) | numErrors = 248   | correct = 46.32
+	Epochs: 700
+		Training:	re(ce) = 0.0461806  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.416217   (0.532468  ) | numErrors = 246   | correct = 46.75
+	Epochs: 710
+		Training:	re(ce) = 0.0494465  (0.0227273 ) | numErrors = 12    | correct = 97.73
+		Test:		re(ce) = 0.41328    (0.54329   ) | numErrors = 251   | correct = 45.67
+	Epochs: 720
+		Training:	re(ce) = 0.0441755  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.404793   (0.534632  ) | numErrors = 247   | correct = 46.54
+	Epochs: 730
+		Training:	re(ce) = 0.0411473  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.415255   (0.532468  ) | numErrors = 246   | correct = 46.75
+	Epochs: 740
+		Training:	re(ce) = 0.0408252  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.419399   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 750
+		Training:	re(ce) = 0.0484929  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.407827   (0.528139  ) | numErrors = 244   | correct = 47.19
+	Epochs: 760
+		Training:	re(ce) = 0.0402893  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.416594   (0.554113  ) | numErrors = 256   | correct = 44.59
+	Epochs: 770
+		Training:	re(ce) = 0.0624011  (0.0189394 ) | numErrors = 10    | correct = 98.11
+		Test:		re(ce) = 0.430473   (0.545455  ) | numErrors = 252   | correct = 45.45
+	Epochs: 780
+		Training:	re(ce) = 0.0538978  (0.0170455 ) | numErrors = 9     | correct = 98.30
+		Test:		re(ce) = 0.415452   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 790
+		Training:	re(ce) = 0.0476097  (0.0246212 ) | numErrors = 13    | correct = 97.54
+		Test:		re(ce) = 0.413378   (0.551948  ) | numErrors = 255   | correct = 44.81
+	Epochs: 800
+		Training:	re(ce) = 0.0467717  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.417218   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 810
+		Training:	re(ce) = 0.0435427  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.409855   (0.554113  ) | numErrors = 256   | correct = 44.59
+	Epochs: 820
+		Training:	re(ce) = 0.0413377  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.420703   (0.549784  ) | numErrors = 254   | correct = 45.02
+	Epochs: 830
+		Training:	re(ce) = 0.0435497  (0.0132576 ) | numErrors = 7     | correct = 98.67
+		Test:		re(ce) = 0.410186   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 840
+		Training:	re(ce) = 0.0405273  (0.0132576 ) | numErrors = 7     | correct = 98.67
+		Test:		re(ce) = 0.419596   (0.562771  ) | numErrors = 260   | correct = 43.72
+	Epochs: 850
+		Training:	re(ce) = 0.0458712  (0.0170455 ) | numErrors = 9     | correct = 98.30
+		Test:		re(ce) = 0.415959   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 860
+		Training:	re(ce) = 0.0468476  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.419131   (0.560606  ) | numErrors = 259   | correct = 43.94
+	Epochs: 870
+		Training:	re(ce) = 0.0520482  (0.0132576 ) | numErrors = 7     | correct = 98.67
+		Test:		re(ce) = 0.412877   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 880
+		Training:	re(ce) = 0.0498907  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.407315   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 890
+		Training:	re(ce) = 0.045677   (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.416438   (0.554113  ) | numErrors = 256   | correct = 44.59
+	Epochs: 900
+		Training:	re(ce) = 0.040081   (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.406987   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 910
+		Training:	re(ce) = 0.0423971  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.416805   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 920
+		Training:	re(ce) = 0.0405051  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.425113   (0.549784  ) | numErrors = 254   | correct = 45.02
+	Epochs: 930
+		Training:	re(ce) = 0.0418998  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.417253   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 940
+		Training:	re(ce) = 0.053476   (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.404684   (0.538961  ) | numErrors = 249   | correct = 46.10
+	Epochs: 950
+		Training:	re(ce) = 0.0407059  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.410269   (0.528139  ) | numErrors = 244   | correct = 47.19
+	Epochs: 960
+		Training:	re(ce) = 0.0413948  (0.0113636 ) | numErrors = 6     | correct = 98.86
+		Test:		re(ce) = 0.426699   (0.551948  ) | numErrors = 255   | correct = 44.81
+	Epochs: 970
+		Training:	re(ce) = 0.0429742  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.413691   (0.530303  ) | numErrors = 245   | correct = 46.97
+	Epochs: 980
+		Training:	re(ce) = 0.0443288  (0.0151515 ) | numErrors = 8     | correct = 98.48
+		Test:		re(ce) = 0.420196   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Epochs: 990
+		Training:	re(ce) = 0.0425391  (0.0094697 ) | numErrors = 5     | correct = 99.05
+		Test:		re(ce) = 0.419441   (0.547619  ) | numErrors = 253   | correct = 45.24
+	Epochs: 1000
+		Training:	re(ce) = 0.0404456  (0.0132576 ) | numErrors = 7     | correct = 98.67
+		Test:		re(ce) = 0.41243    (0.536797  ) | numErrors = 248   | correct = 46.32
+	Достигнуто максимальное количество эпох
+	Training completed: 279.448 s
+	Training:	re(ce) = 0.0402583  (0.0132576 ) | numErrors = 7     | correct = 98.67
+	Test:		re(ce) = 0.410958   (0.541126  ) | numErrors = 250   | correct = 45.89
+	Тестирование МСП на обучающем множестве
+		regressError = 0.0402583
+		classError = 0.0132576
+		numErrors = 7
+		correct = 98.67
+	Тестирование МСП на тестовом множестве
+		regressError = 0.410958
+		classError = 0.541126
+		numErrors = 250
+		correct = 45.89
+	Результаты тестирования MATLAB МСП на обучающем множестве
+		regressError = 0.0914855
+		classError = 0.123106
+		numErrors = 65
+		correct = 87.69
+	Результаты тестирования MATLAB МСП на тестовом множестве
+		regressError = 0.283771
+		classError = 0.487013
+		numErrors = 225
+		correct = 51.30

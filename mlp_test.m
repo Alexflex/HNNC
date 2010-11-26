@@ -4,8 +4,8 @@ clear all
 global flogid;
 flogid = 1;
 
-% filenames = 'textureCR';
-filenames = 'vowels';
+filenames = 'textureCR';
+% filenames = 'vowels';
 % filenames = 'soybean1';
 % filenames = 'mushroom1';
 % filenames = 'nXOR';

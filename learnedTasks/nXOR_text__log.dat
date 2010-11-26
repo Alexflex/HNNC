@@ -1,0 +1,53 @@
+
+mlp_net: Создан 1 слой
+mlp_net: Создан 2 слой
+mlp_net: Создан 3 слой
+	Epochs: 10
+		Training:	re(ce) = 0.938148   (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 20
+		Training:	re(ce) = 0.821312   (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 30
+		Training:	re(ce) = 0.646181   (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 40
+		Training:	re(ce) = 0.438121   (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 50
+		Training:	re(ce) = 0.243076   (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 60
+		Training:	re(ce) = 0.117908   (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 70
+		Training:	re(ce) = 0.0524713  (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 80
+		Training:	re(ce) = 0.022317   (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 90
+		Training:	re(ce) = 0.0101723  (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 100
+		Training:	re(ce) = 0.00470521 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 110
+		Training:	re(ce) = 0.00218271 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 120
+		Training:	re(ce) = 0.00101539 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 130
+		Training:	re(ce) = 0.000484378 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 140
+		Training:	re(ce) = 0.000232116 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 150
+		Training:	re(ce) = 0.000111833 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 160
+		Training:	re(ce) = 5.36828e-005 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 170
+		Training:	re(ce) = 2.61995e-005 (0         ) | numErrors = 0     | correct = 100.00
+	Epochs: 180
+		Training:	re(ce) = 1.25064e-005 (0         ) | numErrors = 0     | correct = 100.00
+	Достигнуто минимальное значение целевой фукнции на обучающем множестве
+	Training completed: 0.380669 s
+	Training:	re(ce) = 9.33643e-006 (0         ) | numErrors = 0     | correct = 100.00
+	Тестирование МСП на обучающем множестве
+		regressError = 9.33643e-006
+		classError = 0
+		numErrors = 0
+		correct = 100.00
+	Результаты тестирования MATLAB МСП на обучающем множестве
+		regressError = 4.83283e-006
+		classError = 0
+		numErrors = 0
+		correct = 100.00
